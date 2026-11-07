@@ -1,0 +1,65 @@
+{
+  "dataset_id": "VALDEMAR-JUNIOR-TO-2022-2026-v1.0.0",
+  "title": "Valdemar Júnior no Tocantins · 2022 × 2026",
+  "subtitle": "Votos nominais para deputado estadual, por município e local de votação",
+  "exported_at": "2026-11-06T21:02:30Z",
+  "uf": "TO",
+  "anos": [
+    2022,
+    2026
+  ],
+  "turno": 1,
+  "cargos": [
+    "Deputado Estadual",
+    "Deputado Federal"
+  ],
+  "candidate": {
+    "name": "Valdemar Júnior",
+    "cargo": "Deputado Estadual",
+    "chave": "VALDEMAR JUNIOR",
+    "numero_2022": 10010,
+    "partido_2022": "REPUBLICANOS",
+    "votos_2022": 17779,
+    "numero_2026": 15015,
+    "partido_2026": "MDB",
+    "votos_2026": 20957
+  },
+  "municipios": 139,
+  "locais": 932,
+  "locais_sem_coordenada": 4,
+  "candidatos": {
+    "estadual": 443,
+    "federal": 224
+  },
+  "candidatos_nos_dois_anos": 47,
+  "version": "1.0.0",
+  "license": "Dados públicos do TSE e do IBGE; coordenadas complementares © colaboradores do OpenStreetMap (ODbL)",
+  "spatial_coverage": "TO",
+  "unit_of_observation": "votável × local de votação × ano",
+  "tables": [
+    {
+      "name": "municipios",
+      "rows": 139,
+      "columns": 3,
+      "bytes": 153034
+    },
+    {
+      "name": "locais",
+      "rows": 932,
+      "columns": 11,
+      "bytes": 55462
+    },
+    {
+      "name": "candidatos",
+      "rows": 667,
+      "columns": 9,
+      "bytes": 24322
+    },
+    {
+      "name": "votos",
+      "rows": 206916,
+      "columns": 9,
+      "bytes": 997862
+    }
+  ]
+}

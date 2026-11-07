@@ -1,0 +1,21 @@
+{
+  "name": "painel-valdemar-junior",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Painel eleitoral de Valdemar Júnior no Tocantins (2022 × 2026)",
+  "scripts": {
+    "dev": "VITE_CANDIDATO='VALDEMAR JUNIOR' VITE_CARGO=estadual vite",
+    "build": "VITE_CANDIDATO='VALDEMAR JUNIOR' VITE_CARGO=estadual vite build && UF=valdemar-junior TITULO='Valdemar Júnior, 2022 e 2026' node scripts/montar.mjs && node scripts/publish-pages.mjs"
+  },
+  "dependencies": {
+    "@duckdb/duckdb-wasm": "1.32.0",
+    "leaflet": "1.9.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.5.0",
+    "vite": "^6.4.5"
+  }
+}

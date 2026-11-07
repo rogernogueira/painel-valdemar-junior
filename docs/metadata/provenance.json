@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-11-06T21:02:30Z",
+  "generator": "dados_painel_deputados.py (repositório eleicoes)",
+  "sources": [
+    {
+      "name": "Boletim de Urna na Web, 1º turno de 2022 (TO)",
+      "file": "bweb_1t_TO_051020221321.zip",
+      "publisher": "TSE · dados abertos (resultados-2022-boletim-de-urna)",
+      "sha256": "d019aebc45641d2e03ad04a798deffcb638746a45b720da4873518e3feb9e9a2"
+    },
+    {
+      "name": "Boletim de Urna na Web, 1º turno de 2026 (TO)",
+      "file": "bweb_1t_TO_051020261403.zip",
+      "publisher": "TSE · dados abertos (resultados-2026-boletim-de-urna)",
+      "sha256": "896fa2b3057eb4a1be16064ddd42e7bfccdbd59e5a48b882049e1760f5641727"
+    },
+    {
+      "name": "Eleitorado por local de votação 2022",
+      "publisher": "TSE · dados abertos",
+      "file": "eleitorado_local_votacao_2022.zip"
+    },
+    {
+      "name": "Eleitorado por local de votação 2026",
+      "publisher": "TSE · dados abertos",
+      "file": "eleitorado_local_votacao_2026.zip"
+    },
+    {
+      "name": "Malha municipal",
+      "publisher": "IBGE",
+      "file": "to_municipios_ibge.geojson"
+    },
+    {
+      "name": "Coordenadas complementares",
+      "publisher": "OpenStreetMap (Nominatim)",
+      "file": "dados/locais/coordenadas_complementares.csv (geocodificar_locais.py)"
+    }
+  ],
+  "steps": [
+    "BU: votos para deputado estadual e federal somados por local de votação (CD_MUNICIPIO + NR_LOCAL_VOTACAO).",
+    "Locais casados entre 2022 e 2026 por município + número; nome e endereço comparados para marcar 'mesmo_predio'.",
+    "Candidatos casados entre os anos pelo nome na urna normalizado, dentro do cargo.",
+    "Coordenadas: cadastro de 2026 (completado pelo OpenStreetMap) e, para locais só de 2022, o cadastro de 2022.",
+    "Municípios ligados à malha do IBGE pelo nome (Tabocão = Fortaleza do Tabocão; São Valério = São Valério da Natividade)."
+  ]
+}

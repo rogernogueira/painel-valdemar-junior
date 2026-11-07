@@ -1,0 +1,162 @@
+[
+  {
+    "table": "municipios",
+    "column": "cod_ibge",
+    "description": "código IBGE do município (7 dígitos)"
+  },
+  {
+    "table": "municipios",
+    "column": "municipio",
+    "description": "nome do município no IBGE"
+  },
+  {
+    "table": "municipios",
+    "column": "geometria",
+    "description": "contorno do município em GeoJSON (Polygon/MultiPolygon, anel externo no sentido horário, 4 casas decimais)"
+  },
+  {
+    "table": "locais",
+    "column": "local_id",
+    "description": "chave do local: código IBGE do município + '-' + número do local de votação no BU"
+  },
+  {
+    "table": "locais",
+    "column": "cod_ibge",
+    "description": "código IBGE do município"
+  },
+  {
+    "table": "locais",
+    "column": "municipio",
+    "description": "nome do município no TSE"
+  },
+  {
+    "table": "locais",
+    "column": "nr_local",
+    "description": "número do local de votação (o do BU; casado entre os anos por município + número)"
+  },
+  {
+    "table": "locais",
+    "column": "local",
+    "description": "nome do local no cadastro do ano mais recente em que aparece"
+  },
+  {
+    "table": "locais",
+    "column": "endereco",
+    "description": "endereço do local no cadastro do ano mais recente"
+  },
+  {
+    "table": "locais",
+    "column": "lat",
+    "description": "latitude (graus decimais)"
+  },
+  {
+    "table": "locais",
+    "column": "lon",
+    "description": "longitude (graus decimais)"
+  },
+  {
+    "table": "locais",
+    "column": "fonte_coordenada",
+    "description": "origem da coordenada: tse (cadastro 2026), tse_<ano>, osm_endereco, osm_nome_local, osm_localidade, osm_municipio ou mediana_municipio"
+  },
+  {
+    "table": "locais",
+    "column": "mesmo_predio",
+    "description": "sim, não ou 'só em um ano': o mesmo número de local tem nome ou endereço parecidos em 2022 e 2026"
+  },
+  {
+    "table": "locais",
+    "column": "coordenada_aproximada",
+    "description": "sim quando a coordenada é só do povoado ou do centro do município"
+  },
+  {
+    "table": "candidatos",
+    "column": "cargo",
+    "description": "estadual ou federal (deputado)"
+  },
+  {
+    "table": "candidatos",
+    "column": "chave",
+    "description": "nome na urna normalizado (maiúsculas, sem acento): casa o candidato entre 2022 e 2026"
+  },
+  {
+    "table": "candidatos",
+    "column": "nome",
+    "description": "nome na urna (o de 2026, ou o de 2022 se não concorreu em 2026)"
+  },
+  {
+    "table": "candidatos",
+    "column": "numero_2022",
+    "description": "número na urna em 2022 (vazio se não concorreu)"
+  },
+  {
+    "table": "candidatos",
+    "column": "partido_2022",
+    "description": "partido em 2022"
+  },
+  {
+    "table": "candidatos",
+    "column": "votos_2022",
+    "description": "votos no 1º turno de 2022 no estado"
+  },
+  {
+    "table": "candidatos",
+    "column": "numero_2026",
+    "description": "número na urna em 2026"
+  },
+  {
+    "table": "candidatos",
+    "column": "partido_2026",
+    "description": "partido em 2026"
+  },
+  {
+    "table": "candidatos",
+    "column": "votos_2026",
+    "description": "votos no 1º turno de 2026 no estado"
+  },
+  {
+    "table": "votos",
+    "column": "cargo",
+    "description": "estadual ou federal (deputado)"
+  },
+  {
+    "table": "votos",
+    "column": "ano",
+    "description": "2022 ou 2026 (1º turno)"
+  },
+  {
+    "table": "votos",
+    "column": "local_id",
+    "description": "chave do local (ver locais)"
+  },
+  {
+    "table": "votos",
+    "column": "tipo",
+    "description": "Nominal, Legenda, Branco ou Nulo"
+  },
+  {
+    "table": "votos",
+    "column": "chave",
+    "description": "nome normalizado do votável (candidato, 'LEGENDA <PARTIDO>', 'BRANCO' ou 'NULO')"
+  },
+  {
+    "table": "votos",
+    "column": "nome",
+    "description": "nome na urna, 'Legenda <partido>', 'Branco' ou 'Nulo'"
+  },
+  {
+    "table": "votos",
+    "column": "numero",
+    "description": "número do votável (candidato, partido na legenda, 95 branco, 96 nulo)"
+  },
+  {
+    "table": "votos",
+    "column": "partido",
+    "description": "sigla do partido (vazio em branco e nulo)"
+  },
+  {
+    "table": "votos",
+    "column": "votos",
+    "description": "votos do votável no local, somadas as seções"
+  }
+]
